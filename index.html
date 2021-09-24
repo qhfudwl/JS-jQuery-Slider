@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>practice</title>
+        <script src="../jquery-3.6.0.min.js"></script>
+        <script src="common.js" defer></script>
+        <link rel="stylesheet" href="common.css">
+    </head>
+    <body>
+        <div id="imgWrap">
+            <div id="listWrap">
+                <ul id="imgList">
+                    <!-- 가상 속성 data-* 를 이용 이미지 경로 저장 -->
+                    <li data-path="image2/ironMan.png" class="slider1"><a href="#">ironMan</a></li>
+                    <li data-path="image2/jake.png" class="slider2"><a href="#">jake</a></li>
+                    <li data-path="image2/koya.png" class="slider3"><a href="#">koya</a></li>
+                    <li data-path="image2/mummy.png" class="slider4"><a href="#">mummy</a></li>
+                    <li data-path="image2/scream.png" class="slider5"><a href="#">scream</a></li>
+                    <li data-path="image2/spongebob.png" class="slider6"><a href="#">spongebob</a></li>
+                    <li data-path="image2/superMario.png" class="slider7"><a href="#">superMario</a></li>
+                </ul>
+            </div>
+            <div id="arrowWrap">
+                <a href="#">left</a>
+                <a href="#">right</a>
+            </div>
+            <div id="btnWrap">
+                <a href="#" class="active">1번 슬라이드</a>
+                <a href="#">2번 슬라이드</a>
+                <a href="#">3번 슬라이드</a>
+                <a href="#">4번 슬라이드</a>
+                <a href="#">5번 슬라이드</a>
+                <a href="#">6번 슬라이드</a>
+                <a href="#">7번 슬라이드</a>
+            </div>
+        </div>
+    </body>
+</html>

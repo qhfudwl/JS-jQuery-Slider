@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 초기화 */
+body, ul {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; text-indent: -9999px;}
+/* 슬라이더 전체를 감싸는 태그 */
+#imgWrap {
+    position: relative; top: 30px; left: calc(50% - 350px);
+    width: 700px; height: 550px;
+}
+/* 리스트 감싸는 태그 */
+#listWrap {
+    width: 500px; height: 500px; margin: 0 auto;
+    overflow: hidden;
+}
+/* 슬라이더 리스트 */
+#imgList {position: relative;}
+#imgList li {float: left;}
+#imgList li a {
+    display: block; width: 500px; height: 500px;
+    background: no-repeat center / 500px;
+}
+/* 방향 버튼 */
+#arrowWrap a {
+    position: absolute; top: 30%;
+    width: 100px; height: 100px;
+    background: no-repeat center / cover;
+    transition-duration: 0.3s;
+}
+#arrowWrap a:nth-child(1) {left: 0px; background-image: url(image2/arrow_left_b.png);}
+#arrowWrap a:nth-child(2) {right: 0px; background-image: url(image2/arrow_right_b.png);}
+#arrowWrap a:nth-child(1):hover {background-image: url(image2/arrow_left_y.png);}
+#arrowWrap a:nth-child(2):hover {background-image: url(image2/arrow_right_y.png);}
+/* 숫자 버튼 */
+#btnWrap {
+    position: absolute; bottom: 20px; left: calc(50% - 140px);
+}
+#btnWrap a {
+    display: block; width: 20px; height: 20px;
+    float: left; margin: 0 10px;
+    background: url(image2/bullet20_b.png) no-repeat center / cover;
+    transition-duration: 0.3s;
+}
+#btnWrap a:hover {background-image: url(image2/bullet20.png);}
+#btnWrap a.active {background-image: url(image2/bullet20.png);}
